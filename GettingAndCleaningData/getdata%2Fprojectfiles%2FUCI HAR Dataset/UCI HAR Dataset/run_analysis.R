@@ -38,9 +38,8 @@ finalSet<-plyr::mutate(set,Activity=act$V2)
 #
 indexes<-grep("std|mean|Mean",features$V2)
 indexes<-c(indexes,ncol(finalSet))
+# Tidy data set
 finalSet<-finalSet[,indexes]
-# Tidy data set:
-finalSet
 
 # Creating tidy data set with the average of each variable for each activity and each subject
 #
